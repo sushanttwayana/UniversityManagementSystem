@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family:Poppins;
+    box-sizing: border-box;
+} 
+
+.header{
+    width:100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(81, 91, 131, 0.5),rgba(26, 42, 104, 0.5)),  url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 30px 60px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav img{
+    width:130px;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.nav-link li{
+    list-style: none;
+    display: inline-block;
+    padding:15px 30px;
+    position: relative;
+    margin-top:-30px;
+}
+
+.nav-link a{
+    text-decoration:none;
+    color:whitesmoke;
+    font-size:16px;
+    font-family: Poppins;
+}
+
+.nav-link li::after {        /*::after selector inserts something after the content of each selected element.*/
+    content:'';             /*use the content property to specify the content to insert. */
+    width:0;
+    height:2px;
+    background:#cf4035;
+    display: block;
+    margin:auto;
+}
+
+.nav-link li:hover::after{
+    width:100%;
+    transition:1s;
+}
+
+.textbox{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    padding:20px;
+    margin-top:60px;
+}
+
+.textbox h1{
+    font-size:55px;
+}
+
+.textbox p{
+    margin: 5px 40px;
+    font-size:20px;
+}
+
+.herobtn{
+    text-decoration: none;
+    padding:8px 18px;
+    cursor: pointer;
+    border:1.5px solid #fff;
+    position: relative;
+    background:transparent;
+    top:20px;
+    color:white;
+    font-size:15px;
+}
+
+.herobtn:hover{
+    border:1.5px solid #cf4035;
+    background:#cf4035;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media (max-width:700px){
+   
+    .textbox h1{
+        font-size:28px;
+    }
+
+    .textbox p{
+        font-size:15px;
+    }  
+
+    .nav-link li{
+        display: block;
+        margin-top:15px;
+        padding:25px;
+    }
+
+    .nav-link{
+        position: absolute;
+        background:rgba(49, 40, 40, 0.925) ;
+        width:200px;
+        height:100vh;
+        top:0;
+        right:-200px;
+        z-index: 2; /*yo element mathi launa*/
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color:white;
+        margin:20px;
+        font-size:25px;
+        cursor:pointer;
+    }
+
+}
+
+.course{
+    width:100%;
+    text-align:center;
+    /* margin:auto; */
+    padding-top:100px;
+
+}
+
+.course h1{
+    font-size: 38px;
+    font-weight:600;
+    color:rgba(49, 40, 40, 0.925) ;
+    padding:30px;
+}
+
+.course li{
+    font-size:18px;
+    font-weight:300;
+    line-height: 22px;
+    color:#777;
+    padding:5px;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    margin-top:7%;
+    /* background: teal; */
+}
+
+.col{
+    flex-basis:33%; /*specifies the initial length of a flexible item.*/
+    background:#f7dbdb;
+    padding:20px 14px;
+    border-radius: 15px;
+    margin-bottom:10px;
+    margin-left:20px;
+    margin-right:20px;
+    transition:.5s;
+}
+
+.topic{
+    color:rgb(71, 67, 67);
+    font-family:Verdana;
+    text-align:center;
+}
+
+.coursesoffered{
+   background: rgba(228, 231, 243, 0.452) ;
+}
+
+.col h3{
+    text-align:center;
+    padding:10px;
+    color:rgb(71, 67, 67)
+}
+
+.col:hover{
+    box-shadow: 5px 5px 20px rgb(167, 65, 82);
+}
+
+@media only screen and (max-width:700){
+    .row{
+        flex-direction: column;
+      }
+}
+
+/* --------- */
+
+.campus{
+    width:100%;
+    text-align:center;
+    margin-top:10px;
+    padding:25px;
+}
+
+.campus h1{
+    color: rgba(36, 29, 29, 0.925);
+    font-size:38px;
+    font-weight:600;
+}
+
+.campus p{
+    font-size:18px;
+    font-weight:300;
+    color:#777;
+    padding:5px;
+}
+
+/* --------- */
+
+.row2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.layer{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:1920px;
+    transition:.5s;
+}
+
+.layer h3{
+    width:100%;
+    font-size:35px;
+    font-weight:500;
+    /* transform:translate(0,); moves an element from its current position (according to the parameters given for the X-axis and the Y-axis) */
+    position: absolute;
+    bottom: 200px;
+    color:whitesmoke;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover h3{
+    opacity: 1;
+    bottom:380px;
+}
+
+.row2:hover img{
+    border-radius: 20px;;
+}
+
+.blocks p{
+    margin-top:-40px;
+    width:65%;
+    margin-left:240px;
+}
+
+/* --------- */
+
+.facilities img{
+    width:90%;
+    border-radius:10px;
+    margin-left:20px;
+}
+
+.facilities{
+    flex-basis:33%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top:-40px;
+    text-align:left;
+
+}
+
+.facilities h3{
+    text-align: center;
+    font-size:1.3rem;
+    font-weight:600;
+    color:rgb(88, 81, 81);
+}
+
+.facilities p{
+    text-align: center;
+    width: 100%;
+    font-size:15px;
+    font-weight:500;
+    color:rgb(88, 81, 81);
+    padding:50px 20px;
+    margin-left:-20px;
+}
+
+/* --------- */
+.testimonials{
+    width:80%;
+    text-align:center;
+    margin:auto; /*You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.*/
+    padding:5px;
+}
+
+.myH1{
+    font-size: 38px;
+    font-weight:600;
+    color:rgba(49, 40, 40, 0.925);
+    padding: 20px;
+}
+
+.myp{
+    font-size:16px;
+    color:#777;
+    padding:2px;
+}
+
+.students1 img{
+  border-radius: 50%;
+  width:100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left:10px;
+}
+
+.students2 img{
+  border-radius: 50%;
+  width:100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left:10px;
+}
+
+.students1{
+    display: flex;
+    background: #e6d6d6;
+    width: 50%;
+    height: 280px;
+    margin: 30px 0 0 -30px;
+    transition: 1s;
+}
+
+.students2{
+    display: flex;
+    background: #e6d6d6;
+    width: 50%;
+    height: 280px;
+    margin:-180px 0 0 580px;
+    transition: 2s;
+}
+
+.students1 h3{
+    padding:30px;
+    text-align: right;
+    margin-left: -300px;
+    margin-top: 20px;
+}
+
+.students1 p{
+    padding:10px;
+    margin-left:-100px;
+    margin-top:10px;
+}
+
+.students2 h3{
+    padding:30px;
+    text-align: right;
+    margin-left: -300px;
+    margin-top: 20px;
+}
+
+.students2 p{
+    padding:10px;
+    margin-left:-100px;
+    margin-top:10px;
+}
+
+.students1:hover{
+    border-radius: 20px ;
+    box-shadow: 10px 10px 10px #ca9090;
+}
+
+.students2:hover{
+    border-radius: 20px ;
+    box-shadow: 10px 10px 10px #ca9090;
+}
+
+ .fa{
+    color: #c93328b0;
+}
+
+.stars{
+    margin-left: 250px;
+}
+
+/* <!-- last part --> */
+
+.lastone{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("../images/banner2.jpg");
+    width:80%;
+    height: 300px;
+    margin-left:150px;
+    padding:50px;
+    margin-top: 100px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.lastone h1{
+    color:whitesmoke;
+    font-family: Helvitica;
+    font-size: 35px;
+    padding:25px;
+}
+
+.footer{
+    text-align: center;
+    padding:50px;
+    margin-bottom: 5%;
+}
+
+.footer h2{
+  background-color: #b98383;
+  width:150px;
+  margin-left:550px;
+  height:50px;
+  cursor: pointer;
+  padding: 5px;
+  color:rgb(44, 39, 39);
+}
+
+.footer h2:hover{
+    padding:8px;
+    background-color: rgba(210, 105, 30, 0.5);
+    color:rgb(33, 76, 116);
+}
+
+.footer p{
+    padding:15px;
+    font-size: 20px;
+    
+}
+
+.socialmedia .fa  {
+    margin: 0 2px;
+    cursor:pointer;
+    margin-left:5px;
+    font-size: 30px;
+}
+
+.socialmedia .fa-facebook{
+    color:#3652f4;
+}
+
+.socialmedia .fa-instagram{
+    color:#e44567;
+}
+.socialmedia .fa-twitter{
+    color:#1992e2;
+}
+.socialmedia .fa-linkedin{
+    color:rgb(129, 123, 123);
+}
+
+#madeby{
+    margin-top:20px;
+    float: right;
+    border-bottom:2px solid maroon;
+    padding:0px;
+}
+
+
+

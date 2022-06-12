@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+ .blog content{
+    width:80%;
+    margin: auto;
+    padding: 40px 0;
+
+}
+
+.courses h1{
+    text-align: center;
+    color:white;
+    margin-top:90px;
+    font-size: 30px;
+}
+
+.blog-left{
+    flex-basis: 60%;
+    margin-left: 80px;
+}
+
+
+.blog-left img{
+   width:100%;
+}
+
+.blog-left h3{
+   font-size: 30px;
+   font-family: sans-serif;
+   padding:30px 0;
+}
+.blog-left p{
+  color:rgb(126, 119, 119);
+  padding:10px 15px 0 0 ;
+}
+
+.blog-right{
+    margin-right: 15px;
+    flex-basis:30%
+}
+
+.blog-right h3{
+    font-size:25px;
+    font-family: sans-serif;
+    color:white;
+    background: rgb(238, 137, 137);
+    padding:10px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+}
+
+.commentbox{
+    border:1px double #ccc;
+    padding:10px;
+    margin-top:80px;
+    width:90%;
+}
+ 
+.commentbox h3{
+    font-size:25px;
+    font-family: Poppins;
+    color:rgb(57, 100, 100);
+    margin: 10px 0 0 15px;
+}
+
+.commentbox input, .commentbox textarea{
+    width:95%;
+    padding:10px 15px;
+    margin:20px 10px;
+    background: #f1efefbd;
+    border: none;
+    outline:none;
+    box-sizing: border-box;
+    color:rgb(92, 87, 87);
+    
+}
+
+.commentbox  button{  
+    padding:10px 15px;
+    margin:20px;
+    background-color: rgb(230, 220, 202);
+    border:none;
+}
+
+
+
+.commentbox  button:hover{
+    background: #ebad7a;
+    cursor: pointer;
+}
+
+.comment-table{
+    border: 1px solid black;
+}
+  
+
